@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Minutnik</string>
+    <string name="tensMinutesPlusBtn">+</string>
+    <string name="minutesPlusBtn">+</string>
+    <string name="tensSecondsPlusBtn">+</string>
+    <string name="secondsPlusBtn">+</string>
+    <string name="tensMinutesText">0</string>
+    <string name="minutesText">0</string>
+    <string name="colon">:</string>
+    <string name="tensSecondsText">0</string>
+    <string name="secondsText">0</string>
+    <string name="tensMinutesMinusBtn">-</string>
+    <string name="minutesMinusBtn">-</string>
+    <string name="tensSecondsMinusBtn">-</string>
+    <string name="secondsMinusBtn">-</string>
+    <string name="startBtn">Start</string>
+    <string name="stopBtn">Stop</string>
+    <string name="pauseBtn">Pause</string>
+</resources>

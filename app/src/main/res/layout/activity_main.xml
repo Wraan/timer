@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        app:layout_constraintBottom_toTopOf="@+id/mainButtons"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/plusButtons"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/texts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/tensMinutesPlusButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tensMinutesPlusBtn"
+                tools:layout_editor_absoluteX="53dp"
+                tools:layout_editor_absoluteY="364dp" />
+
+            <Button
+                android:id="@+id/minutesPlusButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/minutesPlusBtn"
+                tools:layout_editor_absoluteX="108dp"
+                tools:layout_editor_absoluteY="364dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/tensSecondsPlusButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tensSecondsPlusBtn"
+                tools:layout_editor_absoluteX="218dp"
+                tools:layout_editor_absoluteY="364dp" />
+
+            <Button
+                android:id="@+id/secondsPlusButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/secondsPlusBtn"
+                tools:layout_editor_absoluteX="273dp"
+                tools:layout_editor_absoluteY="364dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/texts"
+            android:layout_width="0dp"
+            android:layout_height="74dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plusButtons">
+
+            <TextView
+                android:id="@+id/tensMinutesText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tensMinutesText"
+                android:textSize="55sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif"
+                tools:layout_editor_absoluteX="53dp"
+                tools:layout_editor_absoluteY="84dp" />
+
+            <TextView
+                android:id="@+id/minutesText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/minutesText"
+                android:textSize="55sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif"
+                tools:layout_editor_absoluteX="108dp"
+                tools:layout_editor_absoluteY="84dp" />
+
+            <TextView
+                android:id="@+id/colon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/colon"
+                android:textSize="55sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif"
+                tools:layout_editor_absoluteX="165dp"
+                tools:layout_editor_absoluteY="84dp" />
+
+            <TextView
+                android:id="@+id/tensSecondsText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tensSecondsText"
+                android:textSize="55sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif"
+                tools:layout_editor_absoluteX="218dp"
+                tools:layout_editor_absoluteY="84dp" />
+
+            <TextView
+                android:id="@+id/secondsText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/secondsText"
+                android:textSize="55sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif"
+                tools:layout_editor_absoluteX="273dp"
+                tools:layout_editor_absoluteY="84dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/minusButtons"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texts">
+
+            <Button
+                android:id="@+id/tensMinutesMinusButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tensMinutesMinusBtn"
+                tools:layout_editor_absoluteX="53dp"
+                tools:layout_editor_absoluteY="164dp" />
+
+            <Button
+                android:id="@+id/minutesMinusButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/minutesMinusBtn"
+                tools:layout_editor_absoluteX="108dp"
+                tools:layout_editor_absoluteY="164dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/tensSecondsMinusButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tensSecondsMinusBtn"
+                tools:layout_editor_absoluteX="218dp"
+                tools:layout_editor_absoluteY="164dp" />
+
+            <Button
+                android:id="@+id/secondsMinusButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/secondsMinusBtn"
+                tools:layout_editor_absoluteX="273dp"
+                tools:layout_editor_absoluteY="164dp" />
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/mainButtons"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/startButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/startBtn"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/stopButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/stopBtn"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/pauseButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/pauseBtn"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
